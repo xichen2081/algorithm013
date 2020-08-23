@@ -7,7 +7,7 @@
 
 ## 深度优先搜索模板：
 
-'''
+```
 map<int, int> visited;
 void dfs(Node* root) {
 	//terminator
@@ -26,11 +26,11 @@ void dfs(Node* root) {
 	return;
 }
 
-'''
+```
 
 ## 广度优先搜索模板：
 
-'''
+```
 void bfs(Node* root) {
 	map<int, int> visited;
 	if(!root) return;
@@ -50,11 +50,11 @@ void bfs(Node* root) {
     return;
 }
 
-'''
+```
 
 ## 二分查找模板：
 
-'''
+```
 
 int binarySearch(const vector<int>& nums, int target) {
 	int left = 0, right = (int)nums.size() - 1;
@@ -67,12 +67,12 @@ int binarySearch(const vector<int>& nums, int target) {
     return -1;
 }
 
-'''
+```
 
 ## 使用二分查找，寻找一个半有序数组 [4, 5, 6, 7, 0, 1, 2] 中间无序的地方
 ## 假设这是一个升序排列的数组，那么这个半有序的数组可以看做是升序数组旋转后的结果，也就是要找到这个半有序数组中的最小值。
 
-'''
+ ```
 
 int find_min(vector<int>& nums) {
 	int left = 0, right = nums.size() - 1, mid = 0;
@@ -85,4 +85,4 @@ int find_min(vector<int>& nums) {
 	return left;
 } 
 
-'''
+```
